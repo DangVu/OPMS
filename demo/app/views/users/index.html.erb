@@ -1,0 +1,20 @@
+<span><%= link_to "", logout_url, method: "delete", class:"glyphicon glyphicon-log-out"%></span>
+<table class="showUsers">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |u|%>
+    <tr>
+      <td><%= u.name %></td>
+      <td><%= u.department %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="paginateUser">
+  <%= paginate @users %>
+</div>

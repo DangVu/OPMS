@@ -1,0 +1,25 @@
+<div class='show_project'>
+  <h1 class='login_title'>Update Project</h1>
+    <p class='input_info'><label for='projectId' class='creLabel'>ID</label>
+      <input id='projectId' class='inputValue' name='projectId' disabled>
+    <p class='input_info' ><label for='name' class='creLabel'>Name</label>
+      <input id='name' class='inputValue' type='text' name='name' ></p>
+      <span class='error_msg hidden' id='nameEr'></span>
+    <p class='input_info'><label for='description' class='creLabel'>Description</label>
+      <input id='description' class='inputValue' type='text'></p>
+    <p class='input_info'><label for='startDate' class='creLabel'>Start Date</label>
+      <input  type="text" placeholder="click to show datepicker"  id="startDate" class="inputValue"></p>
+      <span class='error_msg hidden' id='startDateEr'></span>
+    <p class='input_info'><label for='dueDate' class='creLabel'>Due Date</label>
+      <input  type="text" placeholder="click to show datepicker"  id="dueDate" class="inputValue"></p>
+      <span class='error_msg hidden' id='dueDateEr'></span>
+    <p class='input_info'><label for='status' class='creLabel'>Status</label>
+      <select class='inputValue' id='status'>
+        <option value="none">None</option>
+        <option value="done">Done</option>
+        <option value="working">Working</option>
+      </select>
+    </p>
+  <p><button class='button btn btn-primary' id='updateProjectBt'>Update Project</button></p>
+  <a id='addUserPage'>Add Members</a>
+</div>

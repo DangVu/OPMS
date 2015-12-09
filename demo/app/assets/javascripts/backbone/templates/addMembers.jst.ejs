@@ -1,0 +1,82 @@
+<div class='contentLeftAddMemPage hidden'>
+  <table class='contentLeftTable'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Language</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class='bodyTb'></tbody>
+  </table>
+</div>
+<div class='contentRightAddMemPage'>
+  <fieldset class='addMembers'>
+    <legend class='addMembersTitle'>New members</legend>
+    <div class="inner-addon left-addon">
+      <label for="ipsearchNewMember" class='searchLabel'>Search for user or group:</label>
+      <i class="glyphicon glyphicon-search"></i>
+      <input type="text" class="form-control" id="ipsearchNewMember" />
+    </div>
+    <div id='listNewMembers' class='memberAndRole'></div>
+    <div id='role' class='memberAndRole'>
+      <p class='input_info'>
+        <label class='creLabel'>Role
+          <select class="selectRole">
+            <option value='manager'>Manager</option>
+            <option value="developer">Developer</option>
+            <option value="test">Test</option>
+            <option value="guest">Guest</option>
+            <option value="customer">Customer</option>
+          </select>
+        </label>
+        <div class='cbbLangAddMem hidden'>
+
+        </div>
+      </p>
+    </div>
+    <p class='input_info'><label for='startDate' class='creLabel'>Start Date</label>
+      <input  type="text" placeholder="click to show datepicker"  id="startDate" class="inputValue"></p>
+      <span class='error_msg hidden' id='startDateEr'></span>
+    <p class='input_info'><label for='dueDate' class='creLabel'>Due Date</label>
+      <input  type="text" placeholder="click to show datepicker"  id="dueDate" class="inputValue"></p>
+      <span class='error_msg hidden' id='dueDateEr'></span>
+    <p class='input_info'><label for='dueDate' class='creLabel'>Effort(%)</label>
+      <input  type="text" id="effort" class="inputEffort"></p>
+      <span class='error_msg hidden' id='effortEr'></span>
+    <p><input id="member-add-submit" name="commit" type="submit" value="Add"></p>
+  </fieldset>
+<div>
+<script type='text/template' id='newRole'>
+  <div class='changeRole'>
+    <div class='roleMem'>
+      <label class='showNewMembers'>
+        <input class='checkboxAddMembers' type='checkbox' value='manager'> Manager
+      </label>
+      <label class='showNewMembers'>
+        <input class='checkboxAddMembers' type='checkbox' value='developer'> Developer
+      </label>
+      <label class='showNewMembers'>
+        <input class='checkboxAddMembers' type='checkbox' value='test'> Test
+      </label>
+      <label class='showNewMembers'>
+        <input class='checkboxAddMembers' type='checkbox' value='guest'> Guest
+      </label>
+      <label class='showNewMembers'>
+        <input class='checkboxAddMembers' type='checkbox' value='customer'> Customer
+      </label>
+    </div>
+    <div class='cbLanguagesAddMember'>
+
+    </div>
+    <p class='input_info'><label for='dueDate' class='creLabel'>Due Date</label>
+      <input  type="text" placeholder="click to show datepicker" class="inputValue dueDateEdit"></p>
+      <span class='error_msg hidden' id='dueDateEr'></span>
+    <input id="saveChange" name="commit" type="submit" value="Save"><a href='#' class='cancel'>Cancel</a>
+  </div>
+</script>
+<script id='language' type='text/template'>
+  <span class='spLanguage'><input type='checkbox' id='' class='cbLanguage'>
+  <label for='' class='lbLanguage'></label></span>
+</script>

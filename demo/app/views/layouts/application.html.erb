@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% flash.each do |message_type, message| %>
+      <%= content_tag :div, class: "alert-#{message_type}", id: "flash_alert" do %>
+        <p><%=message%></p>
+        <a href="#" id='close_flash'>&times;</a>
+      <% end %>
+  	<% end %>
+	<%= yield %>
+
+</body>
+</html>

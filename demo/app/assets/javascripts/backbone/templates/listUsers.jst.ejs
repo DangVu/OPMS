@@ -1,0 +1,59 @@
+<div class='searchUser'>
+  <h3 class='searchTitle'>Search User</h3>
+  <p class='input_info'><label class='creLabel'>Search User:<input type='text' class='ipSearchVal'></label></p>
+  <p>
+    <label class='creLabel'>Department:
+      <select class='slDepartment'>
+        <option value=''></option>
+        <option value='web'>Web</option>
+        <option value='developer'>Developer</option>
+        <option value='test'>Test</option>
+      </select>
+    </label>
+    <label class='creLabel'>Language:
+      <select class='slLang'>
+        <option value=''></option>
+      </select>
+    </label>
+    <label class='creLabel'>Status:
+      <select class='slStatus'>
+        <option value=''></option>
+        <option value='full'>Full</option>
+        <option value='developer'>Developer</option>
+        <option value='reporter'>Reporter</option>
+        <option value='guest'>Guest</option>
+        <option value='customer'>Customer</option>
+      </select>
+    </label>
+    <label class='creLabel'>Experience:
+      <select class='slExp'>
+        <option value=''></option>
+        <option value=' - 1'>< 1 year</option>
+        <option value='1 - 3'>1 - 3 years</option>
+        <option value='3 - 5'>3 - 5 years</option>
+        <option value='5 - 7'>5 - 7 years</option>
+        <option value='7 - '>> 7 years</option>
+      </select>
+    </label>
+  </p>
+  <p><button class='button btn btn-primary' id='searchUserBt'>Search User</button></p>
+</div>
+<div>
+  <table class='showUserTable'>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Skills</th>
+        <th>Start Date</th>
+      </tr></thead>
+    <tbody class='bodyTb'></tbody>
+  </table>
+</div>
+<script id='listUser-template' type='text/template'>
+  <tr><td>abx</td></tr>
+</script>
+<script id='languages' type='text/template'>
+  <option class='languageOption'>1</option>
+</script>

@@ -1,0 +1,44 @@
+<div class='create_user'>
+  <h1 class='login_title'>Create User</h1>
+    <p class='input_info' ><label for='name' class='creLabel'>Name</label>
+      <input id='name' class='inputValue' type='text' name='name' ></p>
+      <span class='error_msg hidden' id='nameEr'></span>
+    <p class='input_info'><label for='password' class='creLabel'>Password</label>
+      <input id='password' class='inputValue' type='password' name='password' >
+      <span class='error_msg hidden' id='passwordEr'></span>
+    <p class='input_info'><label class='creLabel'>Department:</label>
+      <select class='inputValue' id='department'>
+        <option value=''></option>
+        <option value='web'>Web</option>
+        <option value='developer'>Developer</option>
+        <option value='reporter'>Reporter</option>
+      </select>
+    </p>
+    <div class='input_info' id='lang'><label class='creLabel'>Skill:</label>
+      <button class='btn btn-primary' id='addSkillLv1Bt'>+</button>
+        <div class='allSkillDiv'>
+
+        </div>
+    </div>
+    <div class='input_info'><label for='startDate' class='creLabel'>Start Date</label>
+      <input  type='text' placeholder='click to show datepicker'  id='startDate' class='inputValue'>
+    </div>
+      <span class='error_msg hidden' id='startDateEr'></span>
+  <p><button class='button btn btn-primary' id='createUserBt'>Create User</button></p>
+</div>
+<script id='language' type='text/template'>
+  <span class='spLanguage'><input type='checkbox' id='' class='cbLanguage'>
+  <label for='' class='lbLanguage'></label></span>
+</script>
+<script id='expTemp' type='text/template'>
+  <input  type='text' class='expText'>
+</script>
+<script id='skill1OpTemp' type='text/template'>
+  <option class='skill1Op'></option>
+</script>
+<script type='text/template' id='removeBtTemp'>
+  <button class='btn btn-primary' id='removeFWBt'>-</button>
+</script>
+<script id='skill2OpTemp' type='text/template'>
+  <option class='skill2Op'></option>
+</script>

@@ -1,0 +1,20 @@
+<span><%= link_to "", logout_url, method: "delete", class:"glyphicon glyphicon-log-out"%></span>
+<div class="create_user">
+	<h1 class="login_title">Create User</h1>
+	<%= form_for @user do |f| %>
+		<p class="input_info"><%= f.label :Username %>
+		<em style="color: red">(*)</em>
+		<%= f.text_field :name, id: 'name' %></p>
+		<p class="error_msg"><%= show_errors(@user, :name) %></p>
+		<p class="input_info"><%= f.label :Password %>
+		<em style="color: red">(*)</em>
+		<%= f.password_field :password, id: 'password' %></p>
+		<p class="error_msg"><%= show_errors(@user, :password) %></p>
+		<p class="input_info"><%= f.label :Department %>
+		<em style="color: red">(*)</em>
+		<%= f.text_field :department, id: 'department' %></p>
+		<p class="error_msg"><%= show_errors(@user, :department) %></p>
+
+		<%= f.submit "Create", class: 'button btn btn-primary' %>
+	<% end %>
+</div>

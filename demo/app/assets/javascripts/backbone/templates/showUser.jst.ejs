@@ -1,0 +1,41 @@
+<div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Project
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><a href='#listproject'>List Project</a></li>
+    <li><a href='#createproject'>Create Project</a></li>
+  </ul>
+</div>
+<a href=''>Log Out</a>
+<div class='show_user'>
+  <h1 class='login_title'>Show User</h1>
+    <p class='input_info'><label for='userId' class='creLabel'>ID</label>
+      <input id='userId' class='inputValue' name='userId' disabled>
+    <p class='input_info' ><label for='name' class='creLabel'>Name</label>
+      <input id='name' class='inputValue' type='text' name='name' ></p>
+      <span class='error_msg hidden' id='nameEr'></span>
+    <p class='input_info'><label class='creLabel'>Department:</label>
+      <select class='inputValue' id='department'>
+        <option value=''></option>
+        <option value='web'>Web</option>
+        <option value='developer'>Developer</option>
+        <option value='reporter'>Reporter</option>
+      </select>
+    </p>
+    <div class='input_info' id='lang'><label class='creLabel'>Language:</label>
+        <input id='ipLang' class='inputValue' type='text' name='name'>
+        <div class='cbLanguages hidden'>
+
+        </div>
+    </div>
+    <p class='input_info'><label for='startDate' class='creLabel'>Start Date</label>
+      <input  type="text" placeholder="click to show datepicker"  id="startDate" class="inputValue"></p>
+      <span class='error_msg hidden' id='startDateEr'></span>
+    <p><a class='button btn btn-primary' id='updateUserBt'>Update Project</a></p>
+</div>
+<script id='language' type='text/template'>
+  <span class='spLanguage'><input type='checkbox' id='' class='cbLanguage'>
+  <label for='' class='lbLanguage'></label></span>
+</script>
